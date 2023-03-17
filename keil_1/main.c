@@ -35,7 +35,7 @@ uint8_t State[25][13]=
 	{1,0,0,0,0,0,0,0,0,0,0,0,1},//23
 	{1,0,0,0,0,0,0,0,0,0,0,0,1},//24
 	{1,1,1,1,1,1,1,1,1,1,1,1,1},//25
-};
+};  //设定屏幕方格的状态
 
 uint8_t Color[24][11]=
 {
@@ -63,7 +63,7 @@ uint8_t Color[24][11]=
 	{0,0,0,0,0,0,0,0,0,0,0},//22
 	{0,0,0,0,0,0,0,0,0,0,0},//23
 	{0,0,0,0,0,0,0,0,0,0,0},//24
-};
+};  //设定屏幕方格的色彩
 
 uint16_t SelectColor(uint8_t what){
 	uint16_t color;
@@ -78,7 +78,7 @@ uint16_t SelectColor(uint8_t what){
 		case 20: case 21: case 22: color=RED; break; //炸弹
 	}
 	return color;
-}
+}  //颜色选择
 
 void StateInit()
 {
@@ -121,7 +121,7 @@ void StateInit()
 			State[24][j]=1;
 		}
 	}
-}
+}  //模式设定
 
 void DrawBox(uint16_t x,uint16_t y, uint8_t what)
 {
@@ -151,7 +151,9 @@ void DrawBox(uint16_t x,uint16_t y, uint8_t what)
 		LCD_Fill(13*y-12, 13*x-12, 13*y-1, 13*x-1, SelectColor(what));
 	}
   LCD_DrawRectangle(13*y-12, 13*x-12, 13*y-1, 13*x-1);
-}
+}  //填色函数
+
+
 void DeleteBox(uint16_t x,uint16_t y)
 {
 	//480x320   24x11   480x220     20	
@@ -163,7 +165,9 @@ void DeleteBox(uint16_t x,uint16_t y)
 	  LCD_Fill(13*y-12, 13*x-12, 13*y-1, 13*x-1, WHITE);
 	  Color[x-1][y-1]=0;
 	}
-}
+}  //删除函数
+
+
 void DrawPic(uint16_t x,uint16_t y,uint8_t what)
 {
 	//左上角为原点
@@ -347,7 +351,7 @@ void DrawPic(uint16_t x,uint16_t y,uint8_t what)
 		}
 		break;
 	}
-}
+}  //画方块组合
 
 void DeletePic(uint16_t x,uint16_t y,uint8_t what)
 {
@@ -532,7 +536,7 @@ void DeletePic(uint16_t x,uint16_t y,uint8_t what)
 		}
 		break;
 	}
-}
+}  //删方块组合
 
 void MoveDown(uint16_t x,uint16_t y,uint8_t what)
 {
@@ -548,7 +552,8 @@ void MoveRight(uint16_t x,uint16_t y,uint8_t what)
 {
 	DeletePic(x,y,what);
 	DrawPic(x,y+1,what);
-}
+} //左移，右移，下移
+
 void Change(uint16_t x,uint16_t y,uint8_t what)
 {
 	switch(what)
@@ -581,7 +586,9 @@ void Change(uint16_t x,uint16_t y,uint8_t what)
 		
 		case 20:case 21:case 22:break;
 	}
-}
+}  //对缓慢下落的模拟
+
+
 uint8_t Change_w(uint8_t what)
 {
 	uint8_t w;
@@ -614,7 +621,9 @@ uint8_t Change_w(uint8_t what)
 		case 19:w=18;break;
 	}
 	return w;
-}
+}  //对缓慢下落的模拟
+
+
 void DrawBox_s(uint16_t x,uint16_t y)
 {
 	//480x320   24x11   480x220     20	
@@ -625,7 +634,7 @@ void DeleteBox_s(uint16_t x,uint16_t y)
 {
 	//480x320   24x11   480x220     20	
 	State[x-1][y]=0;
-}
+}  //这俩函数暂时不知道啥意思
 
 void DrawPic_s(uint16_t x,uint16_t y,uint8_t what)
 {
@@ -1110,7 +1119,8 @@ void ExchangeLine(uint16_t x)  //x取1~23 和对应下一行交换
 			DrawBox(x+1,i,Color[x][i-1]);
 		}
 	}
-}
+}  //将给定行x及其下一行的方块颜色进行交换
+
 
 void DeleteLine(uint16_t x)
 {
@@ -1120,7 +1130,7 @@ void DeleteLine(uint16_t x)
 		DeleteBox_s(x,i);
 		DeleteBox(x,i);
 	}
-}
+}  
 
 int ClearLine()
 {
@@ -1148,7 +1158,7 @@ int ClearLine()
 		}
 	}
 	return ret;
-}
+}  //清除满行并更新分数
 
 void PicInit()
 {
@@ -1170,7 +1180,7 @@ void PicInit()
 			}
 		}
 	}
-}
+}  //初始化
 
 void Explode(uint16_t x,uint16_t y)
 {
@@ -1199,7 +1209,7 @@ void Explode(uint16_t x,uint16_t y)
 	if(x<24 && y<11 && State[x][y+1]==1){      //消除右下
 		DeleteBox(x+1,y+1); DeleteBox_s(x+1,y+1); score++;
 	}
-}
+}  //消除周围的方块并更新分数
 
 void LightOn(uint16_t x,uint16_t y){
 	uint8_t i,j;
@@ -1210,7 +1220,7 @@ void LightOn(uint16_t x,uint16_t y){
 			}
 		}
 	}	
-}
+}  //将指定位置周围的方格变成明亮的颜色
 
 void LightOff(uint16_t x,uint16_t y){
 	uint8_t i,j;
@@ -1236,6 +1246,8 @@ int main(void)
 	LCD->LCD_RST = 1;
 	LCD_Init();
 	*GPIO_OEN=0x00;
+	//一些初始化设定
+	
 	while(1)	 
 {	LCD_Clear(WHITE);
 	POINT_COLOR=RED;
@@ -1247,6 +1259,8 @@ int main(void)
 	POINT_COLOR=BLUE;
 	LCD_ShowString(23,160,200,24,24,"Normal   Block");
 	LCD_ShowString(23,200,200,24,24,"Explode  Hiding");
+	//初始界面
+	
 	
 	while(1){
 		if(*GPIO_IDR==0xff){
@@ -1287,6 +1301,8 @@ int main(void)
 	POINT_COLOR=BLUE;
 	LCD_ShowString(23,140,200,24,24,"  Easy   Middle");
 	LCD_ShowString(80,180,200,24,24,"Hard");
+	
+	
 	while(1){
 		if(*GPIO_IDR==0xff){
 			key=*GPIO_IDR;

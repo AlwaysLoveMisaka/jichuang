@@ -1,30 +1,32 @@
 Dependencies for Project 'test', Target 'Target 1': (DO NOT MODIFY !)
-F (..\code_def.c)(0x640C0608)(--c99 --gnu -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections --c99-I.\RTE\_Target_1-I"D:\keil 5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I"D:\keil 5\ARM\PACK\ARM\CMSIS\4.2.0\Device\ARM\ARMCM0\Include"-D__UVISION_VERSION="525" -D_RTE_ -DARMCM0-o .\objects\code_def.o --omf_browse .\objects\code_def.crf --depend .\objects\code_def.d)
-I (..\code_def.h)(0x641085C3)
-I (D:\keil 5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (D:\keil 5\ARM\ARMCC\include\string.h)(0x5475F300)
-F (..\lcd.c)(0x640D9763)(--c99 --gnu -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections --c99-I.\RTE\_Target_1-I"D:\keil 5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I"D:\keil 5\ARM\PACK\ARM\CMSIS\4.2.0\Device\ARM\ARMCM0\Include"-D__UVISION_VERSION="525" -D_RTE_ -DARMCM0-o .\objects\lcd.o --omf_browse .\objects\lcd.crf --depend .\objects\lcd.d)
-I (..\code_def.h)(0x641085C3)
-I (D:\keil 5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (D:\keil 5\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\lcdfont.h)(0x64074069)
-F (..\main.c)(0x641089A1)(--c99 --gnu -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections --c99-I.\RTE\_Target_1-I"D:\keil 5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I"D:\keil 5\ARM\PACK\ARM\CMSIS\4.2.0\Device\ARM\ARMCM0\Include"-D__UVISION_VERSION="525" -D_RTE_ -DARMCM0-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (D:\keil 5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (D:\keil 5\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (D:\keil 5\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (..\code_def.h)(0x641085C3)
-F (..\systick.c)(0x64108BB4)(--c99 --gnu -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections --c99-I.\RTE\_Target_1-I"D:\keil 5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I"D:\keil 5\ARM\PACK\ARM\CMSIS\4.2.0\Device\ARM\ARMCM0\Include"-D__UVISION_VERSION="525" -D_RTE_ -DARMCM0-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
-I (..\code_def.h)(0x641085C3)
-I (D:\keil 5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-F (..\gpio.c)(0x640C4E08)(--c99 --gnu -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections --c99-I.\RTE\_Target_1-I"D:\keil 5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I"D:\keil 5\ARM\PACK\ARM\CMSIS\4.2.0\Device\ARM\ARMCM0\Include"-D__UVISION_VERSION="525" -D_RTE_ -DARMCM0-o .\objects\gpio.o --omf_browse .\objects\gpio.crf --depend .\objects\gpio.d)
-I (..\code_def.h)(0x641085C3)
-I (D:\keil 5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (D:\keil 5\ARM\ARMCC\include\stdio.h)(0x5475F300)
-F (RTE\Device\ARMCM0\startup_ARMCM0.s)(0x640C9F9C)(--cpu Cortex-M0 --li -g --apcs=interwork -I.\RTE\_Target_1-I"D:\keil 5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I"D:\keil 5\ARM\PACK\ARM\CMSIS\4.2.0\Device\ARM\ARMCM0\Include"--pd "__UVISION_VERSION SETA 525" --pd "_RTE_ SETA 1" --pd "ARMCM0 SETA 1"--list .\listings\startup_armcm0.lst --xref -o .\objects\startup_armcm0.o --depend .\objects\startup_armcm0.d)
-F (RTE\Device\ARMCM0\system_ARMCM0.c)(0x53FEF2AA)(--c99 --gnu -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections --c99-I.\RTE\_Target_1-I"D:\keil 5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include"-I"D:\keil 5\ARM\PACK\ARM\CMSIS\4.2.0\Device\ARM\ARMCM0\Include"-D__UVISION_VERSION="525" -D_RTE_ -DARMCM0-o .\objects\system_armcm0.o --omf_browse .\objects\system_armcm0.crf --depend .\objects\system_armcm0.d)
-I (D:\keil 5\ARM\PACK\ARM\CMSIS\4.2.0\Device\ARM\ARMCM0\Include\ARMCM0.h)(0x540FF94C)
-I (D:\keil 5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cm0.h)(0x53FC31DA)
-I (D:\keil 5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (D:\keil 5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmInstr.h)(0x53FEF2AA)
-I (D:\keil 5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include\core_cmFunc.h)(0x53FEF2AA)
-I (D:\keil 5\ARM\PACK\ARM\CMSIS\4.2.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x50B2CC4C)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (..\code_def.c)(0x640C060A)(--c99 --gnu -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections --c99-I.\RTE\_Target_1-IC:\Users\DELL\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\DELL\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="535" -D_RTE_ -DARMCM0 -D_RTE_-o .\objects\code_def.o --omf_browse .\objects\code_def.crf --depend .\objects\code_def.d)
+I (..\code_def.h)(0x641085C4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+F (..\lcd.c)(0x640D9764)(--c99 --gnu -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections --c99-I.\RTE\_Target_1-IC:\Users\DELL\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\DELL\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="535" -D_RTE_ -DARMCM0 -D_RTE_-o .\objects\lcd.o --omf_browse .\objects\lcd.crf --depend .\objects\lcd.d)
+I (..\code_def.h)(0x641085C4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (..\lcdfont.h)(0x6407406A)
+F (..\main.c)(0x641490E1)(--c99 --gnu -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections --c99-I.\RTE\_Target_1-IC:\Users\DELL\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\DELL\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="535" -D_RTE_ -DARMCM0 -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
+I (..\code_def.h)(0x641085C4)
+F (..\systick.c)(0x64108BB6)(--c99 --gnu -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections --c99-I.\RTE\_Target_1-IC:\Users\DELL\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\DELL\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="535" -D_RTE_ -DARMCM0 -D_RTE_-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
+I (..\code_def.h)(0x641085C4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+F (..\gpio.c)(0x640C4E0A)(--c99 --gnu -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections --c99-I.\RTE\_Target_1-IC:\Users\DELL\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\DELL\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="535" -D_RTE_ -DARMCM0 -D_RTE_-o .\objects\gpio.o --omf_browse .\objects\gpio.crf --depend .\objects\gpio.d)
+I (..\code_def.h)(0x641085C4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+F (RTE\Device\ARMCM0\startup_ARMCM0.s)(0x640C9F9E)(--cpu Cortex-M0 --li -g --apcs=interwork -I.\RTE\_Target_1-IC:\Users\DELL\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\DELL\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include--pd "__UVISION_VERSION SETA 535" --pd "_RTE_ SETA 1" --pd "ARMCM0 SETA 1" --pd "_RTE_ SETA 1"--list .\listings\startup_armcm0.lst --xref -o .\objects\startup_armcm0.o --depend .\objects\startup_armcm0.d)
+F (RTE\Device\ARMCM0\system_ARMCM0.c)(0x53FEF2AA)(--c99 --gnu -c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --split_sections --c99-I.\RTE\_Target_1-IC:\Users\DELL\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\DELL\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="535" -D_RTE_ -DARMCM0 -D_RTE_-o .\objects\system_armcm0.o --omf_browse .\objects\system_armcm0.crf --depend .\objects\system_armcm0.d)
+I (C:\Users\DELL\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include\ARMCM0.h)(0x60D3E8E2)
+I (C:\Users\DELL\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Users\DELL\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\DELL\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\DELL\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\DELL\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x60D3E8E2)

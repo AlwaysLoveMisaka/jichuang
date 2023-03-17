@@ -384,10 +384,17 @@ ARM Macro Assembler    Page 6
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0 --apcs=interw
 ork --depend=.\objects\startup_armcm0.d -o.\objects\startup_armcm0.o -I.\RTE\_T
-arget_1 -I"D:\keil 5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include" -I"D:\keil 5\ARM\P
-ACK\ARM\CMSIS\4.2.0\Device\ARM\ARMCM0\Include" --predefine="__UVISION_VERSION S
-ETA 525" --predefine="_RTE_ SETA 1" --predefine="ARMCM0 SETA 1" --list=.\listin
-gs\startup_armcm0.lst RTE\Device\ARMCM0\startup_ARMCM0.s
+arget_1 -IC:\Users\DELL\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Incl
+ude -IC:\Users\DELL\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\I
+nclude --predefine="__UVISION_VERSION SETA 535" --predefine="_RTE_ SETA 1" --pr
+edefine="ARMCM0 SETA 1" --predefine="_RTE_ SETA 1" --list=.\listings\startup_ar
+
+
+
+ARM Macro Assembler    Page 7 
+
+
+mcm0.lst RTE\Device\ARMCM0\startup_ARMCM0.s
 
 
 
